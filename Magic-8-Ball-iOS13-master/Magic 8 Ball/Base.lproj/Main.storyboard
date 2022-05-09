@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Magic_8_Ball" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fnt-Kf-6P1">
+                                <rect key="frame" x="142" y="622" width="130" height="90"/>
+                                <color key="backgroundColor" red="0.16470588235294117" green="0.14509803921568626" blue="0.31372549019607843" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="130" id="LBv-HS-69H"/>
+                                    <constraint firstAttribute="height" constant="90" id="ODh-Z6-bI5"/>
+                                </constraints>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Ask">
+                                    <fontDescription key="titleFontDescription" type="system" pointSize="40"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="didTapChangedImage:" destination="BYZ-38-t0r" eventType="touchUpInside" id="udv-gc-tVW"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Ask Me Anything..." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zdZ-tc-9HO">
+                                <rect key="frame" x="87" y="94" width="240" height="36"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="SXf-Sd-bin">
+                                <rect key="frame" x="87" y="193.5" width="240" height="240"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="240" id="H2L-Z8-252"/>
+                                    <constraint firstAttribute="height" constant="240" id="z7g-uo-c4a"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" red="1" green="0.46666666666666667" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="fnt-Kf-6P1" secondAttribute="trailing" id="4WD-uG-8A9"/>
+                            <constraint firstItem="fnt-Kf-6P1" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="ISZ-X4-Ek9"/>
+                            <constraint firstItem="zdZ-tc-9HO" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="Lzd-Fq-CHp"/>
+                            <constraint firstItem="zdZ-tc-9HO" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="V9T-un-EfC"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="fnt-Kf-6P1" secondAttribute="bottom" constant="150" id="VNN-FK-hUa"/>
+                            <constraint firstItem="zdZ-tc-9HO" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="50" id="cr8-ar-H1L"/>
+                            <constraint firstItem="fnt-Kf-6P1" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="fZZ-xS-jDm"/>
+                            <constraint firstItem="SXf-Sd-bin" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" multiplier="0.7" id="kpt-Bt-hSP"/>
+                            <constraint firstItem="SXf-Sd-bin" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="q8D-hl-7wL"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="zdZ-tc-9HO" secondAttribute="trailing" id="vb7-bd-lvC"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="ballImageView" destination="SXf-Sd-bin" id="pX5-fi-3h0"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="18.840579710144929" y="97.767857142857139"/>
+        </scene>
+    </scenes>
+</document>

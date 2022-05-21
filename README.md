@@ -1,1 +1,3 @@
 # DailyStudy
+mangoplate_ios_woji
+mangoplate_ios_woji

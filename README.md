@@ -1,3 +1,6 @@
 # DailyStudy
-mangoplate_ios_woji
-mangoplate_ios_woji
+## 2022-05-22 진행현황
+***
+* API 설치
+** 'Alamofire'
+** 'Tabman'

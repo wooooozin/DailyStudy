@@ -1,5 +1,2 @@
 # DailyStudy
-## 2022-05-22 진행현황
-* Pod Install
-  * alamofire
-  * tabman 
+UDEMY iOS 강의 첼린저 입니다.

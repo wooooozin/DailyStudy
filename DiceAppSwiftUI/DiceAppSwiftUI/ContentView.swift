@@ -15,11 +15,13 @@ struct ContentView: View {
                 .edgesIgnoringSafeArea(.all)
             VStack {
                 Image("diceeLogo")
+                Spacer()
                 HStack {
                     DiceView(number: 1)
                     DiceView(number: 2)
                 }
                 .padding(.horizontal)
+                Spacer()
                 Button {
                     print("click")
                 } label: {
@@ -30,6 +32,7 @@ struct ContentView: View {
                         .padding(.horizontal)
                 }
                 .background(.red)
+                .padding(.vertical)
             }
         }
     }
@@ -48,5 +51,6 @@ struct DiceView: View {
         Image("dice\(number)")
             .resizable()
             .aspectRatio(contentMode: .fit)
+            .padding()
     }
 }

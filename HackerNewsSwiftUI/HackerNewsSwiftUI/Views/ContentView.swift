@@ -17,9 +17,15 @@ struct ContentView: View {
                     DetailView(url: post.url)
                 } label: {
                     HStack {
-                        Text(String(post.points))
+                        VStack {
+                            Image(systemName: "hand.thumbsup")
+                                .foregroundColor(.gray)
+                            Text(String(post.points))
+                                .padding()
+                        }
                         Text(post.title)
                     }
+                    .frame(height: 100)
                 }
             }
             .listStyle(.plain)

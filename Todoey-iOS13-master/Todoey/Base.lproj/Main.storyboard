@@ -32,7 +32,16 @@
                             <outlet property="delegate" destination="tmd-QP-B4w" id="9pO-X1-Wjg"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="Todoey" id="hYA-rt-l1h"/>
+                    <toolbarItems/>
+                    <navigationItem key="navigationItem" title="Todoey" id="hYA-rt-l1h">
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="5Lt-3h-kfD">
+                            <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <connections>
+                                <action selector="didTapAddTodo:" destination="tmd-QP-B4w" id="h6J-CA-U3X"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="zcv-es-Qge" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -43,8 +52,8 @@
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="8Fj-px-q4R" sceneMemberID="viewController">
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" largeTitles="YES" id="mV1-Nu-jLm">
-                        <rect key="frame" x="0.0" y="44" width="414" height="96"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="mV1-Nu-jLm">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" red="0.2784313725" green="0.70980392160000005" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <textAttributes key="titleTextAttributes">
